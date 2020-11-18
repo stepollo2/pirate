@@ -233,6 +233,7 @@ BITCOIN_CORE_H = \
   protocol.h \
   pubkey.h \
   random.h \
+	util/readwritefile.h \
   reverselock.h \
   rpc/client.h \
   rpc/protocol.h \
@@ -569,6 +570,7 @@ libbitcoin_util_a_SOURCES = \
   utilstrencodings.cpp \
   utiltime.cpp \
   util/asmap.cpp \
+	util/readwritefile.cpp \
   $(BITCOIN_CORE_H) \
   $(LIBZCASH_H)
 
