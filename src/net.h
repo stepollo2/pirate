@@ -108,6 +108,10 @@ void SetBannedSetDirty(bool dirty=true);
     //!clean unused entries (if bantime has expired)
 void SweepBanned();
 
+void CreateNodeFromAcceptedSocket(SOCKET hSocket,
+                                            bool whitelisted,
+                                            const CAddress& addr_bind,
+                                            const CAddress& addr);
 typedef int NodeId;
 
 enum NumConnections {
